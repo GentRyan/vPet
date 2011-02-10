@@ -13,7 +13,7 @@ Simply use make on the included makefile. Please note that there is no 'make ins
 
 Use
 -----------------------------------------------------------------------
-First, start the daemon using ./vpd. Then, start the basic pet program using ./vpclient. After that, please refer to your frontends included documentation for controlling your pet. Note: vpd MUST be started first. Nothing else will run until that's started! If you are using the included Ruby Pet frontend, please see the README there for help.
+First, start the daemon using ./vpd. Then, start the basic pet program using ./vpclient. After that, please refer to your frontends included documentation for controlling your pet. Note: vpd MUST be started first. Nothing else will run until that's started! If you are using the included Ruby Pet frontend, please see the README there for help. (WARNING: At this moment, running vpclient will cause all attempted connections to the daemon to be put on indefinite hold. It is not recommended to use vpclient at this time)
 
 Copyright
 -----------------------------------------------------------------------
