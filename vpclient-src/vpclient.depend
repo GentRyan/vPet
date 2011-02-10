@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1295813096 source:/home/bit/C++Progs/Sockets/ClientSocket.cpp
+	"ClientSocket.h"
+	"SocketException.h"
+
+1295813093 /home/bit/C++Progs/Sockets/ClientSocket.h
+	"Socket.h"
+
+1295813074 /home/bit/C++Progs/Sockets/Socket.h
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<netdb.h>
+	<unistd.h>
+	<string>
+	<arpa/inet.h>
+
+1295813082 /home/bit/C++Progs/Sockets/SocketException.h
+	<string>
+
+1295813303 source:/home/bit/C++Progs/Sockets/Socket.cpp
+	"Socket.h"
+	"string.h"
+	<string.h>
+	<errno.h>
+	<fcntl.h>
+	<iostream>
+
+1297369411 source:/home/bit/C++Progs/vpclient/main.cpp
+	"../Sockets/ClientSocket.h"
+	"../Sockets/SocketException.h"
+	<iostream>
+	<string>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

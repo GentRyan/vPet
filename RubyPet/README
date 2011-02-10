@@ -1,0 +1,13 @@
+The RubyPet frontend is a very simple frontend created to show the basic features of the Virtual Pet Daemon (VPD) and it's easy to customize trait. The frontend is made up of three ruby scripts: A status displayer, a simple game, and a method to feed your pet.
+
+Feed.rb:
+
+How to use: Type "ruby feed.rb" followed by one of several types of food: Rice, Cake, or Tostadas. Experiment with the different foods to see their effects!
+
+Status.rb:
+
+How to use: Simply run the script with "ruby status.rb" to see your pet's current age, weight, happiness, and hunger level.
+
+Game.rb:
+
+How to use: A guessing game based off the one included on the Pocket Pikachu GS, try to guess whether the card drawn next will be higher or lower then the one drawn already!

@@ -1,0 +1,26 @@
+Virtual Pet Daemon
+-----------------------------------------------------------------------
+The Virtual Pet Daemon (VPD) is a daemon that simulates a virtual pet that you can interface with through user-creatable and customizable frontends. The daemon can also be theoretically run over a network, however this has not been tested.
+
+Installation
+-----------------------------------------------------------------------
+
+Simply run the included install.sh script, which will automatically compile the binaries.
+
+Compiling from source
+-----------------------------------------------------------------------
+Simply use make on the included makefile. Please note that there is no 'make install' option as of now. You will also have to manually create your ~/vpd.txt file. The default file is included in this directory.
+
+Use
+-----------------------------------------------------------------------
+First, start the daemon using ./vpd. Then, start the basic pet program using ./vpclient. After that, please refer to your frontends included documentation for controlling your pet. Note: vpd MUST be started first. Nothing else will run until that's started! If you are using the included Ruby Pet frontend, please see the README there for help.
+
+Copyright
+-----------------------------------------------------------------------
+This program is Uncopyrighted. Its author, Steve Ryan, has released all claims on copyright and has put all the content of this program into the public domain.
+
+No permission is needed to copy, distribute, or modify the content of this program. Credit is appreciated but not required.
+
+Terms and Conditions for Copying, Distribution and Modification
+
+0. Do whatever the hell you like.

@@ -1,0 +1,49 @@
+# depslib dependency file v1.0
+1297373220 source:/home/bit/vPet/vpd-src/daemonize.cpp
+	"daemonize.h"
+	<fstream>
+
+1295835737 /home/bit/vPet/vpd-src/daemonize.h
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<errno.h>
+	<sys/stat.h>
+	<sys/types.h>
+	<time.h>
+	<fstream>
+	<string.h>
+	"../Sockets/ServerSocket.h"
+	"../Sockets/SocketException.h"
+
+1295813086 /home/bit/vPet/Sockets/ServerSocket.h
+	"Socket.h"
+
+1295813074 /home/bit/vPet/Sockets/Socket.h
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<netdb.h>
+	<unistd.h>
+	<string>
+	<arpa/inet.h>
+
+1295813082 /home/bit/vPet/Sockets/SocketException.h
+	<string>
+
+1295813089 source:/home/bit/vPet/Sockets/ServerSocket.cpp
+	"ServerSocket.h"
+	"SocketException.h"
+
+1295813303 source:/home/bit/vPet/Sockets/Socket.cpp
+	"Socket.h"
+	"string.h"
+	<string.h>
+	<errno.h>
+	<fcntl.h>
+	<iostream>
+
+1297373408 source:/home/bit/vPet/vpd-src/main.cpp
+	<iostream>
+	"daemonize.h"
+
