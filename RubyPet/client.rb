@@ -10,7 +10,7 @@ def parser(message)
 end
 
 def adjust(a,b)
-	message = "m" + a.to_s + b.to_s
+	message = "m" + " " + a.to_s + " " + b.to_s
 	
 	hostname = 'localhost'
 	port = 30000
@@ -45,7 +45,7 @@ def main
 		parser(messanger())
 		ageTimeout = $stats[3] * 599 unless (ageTimeout = $stats[3] * 599) > 7200
 		
-		
+		#puts("Step1")
 		if (ageTimeout = $stats[3] * 599) > 7200
 		then
 			ageTimeout = 7200
@@ -59,7 +59,7 @@ def main
 		then
 			adjust(3,1)
 		end
-		
+		#puts("Step2")
 		sleep(ageTimeout-(ageTimeout/2))
 		adjust(1,-1)
 		parser(messanger)
