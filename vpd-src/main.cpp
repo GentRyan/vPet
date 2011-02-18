@@ -1,5 +1,4 @@
 #include <iostream>
-#define ROUNDTIME 100
 #include "daemonize.h"
 using namespace std;
 
@@ -16,7 +15,6 @@ int main(int argc, char* argv[])
 
     while ( true )
 	{
-      demon.modifyStats(0,0);
 	  ServerSocket new_sock;
 	  server.accept ( new_sock );
 	  try

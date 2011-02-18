@@ -27,21 +27,20 @@ void VirtualPet::dataWrite()
 VirtualPet::VirtualPet()
 {
     dataRead();
-    (stats[3] != 0) ? ageTimeout= stats[3] * 15 : ageTimeout = 10;
-    returnThings = {0,0};
-
 }
 
 void VirtualPet::modifyStats(int statType, int adjustment)
 {
     dataRead();
-    stats[statType] += adjustment;
+    if (adjustment != 0)
+    {stats[statType] += adjustment;}
     if (stats[2] < 5) stats[2] = 5;
     if (stats[0] > 9) stats[0] = 9;
     if (stats[1] > 9) stats[1] = 9;
-    if (stats[0] > 99) stats[3] = 99;
+    if (stats[3] > 99) stats[3] = 99;
     if (stats[2] > 99) stats[2] = 99;
-
+	if (adjustment == 0)
+		{stats[statType] = 0;}
     dataWrite();
 }
 
@@ -66,14 +65,6 @@ void VirtualPet::parseCommands(std::string commands)
         }
     }
 }
-
-int VirtualPet::thingReturn(int thing)
-{
-    int a = returnThings[thing];
-    returnThings[thing] = 0;
-    return a;
-}
-
 std::string VirtualPet::stringReturn()
 {
     char agra[9];
@@ -81,3 +72,4 @@ std::string VirtualPet::stringReturn()
     std::string raga(agra);
     return raga;
 }
+

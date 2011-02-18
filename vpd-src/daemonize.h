@@ -20,7 +20,6 @@ class VirtualPet
         int ageTimeout;
         int statGet(int statType) {return stats[statType];}
         void parseCommands(std::string);
-        int thingReturn(int);
         std::string stringReturn();
         VirtualPet();
     private:

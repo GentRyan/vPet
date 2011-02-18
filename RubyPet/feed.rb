@@ -11,8 +11,6 @@ case ARGV[0]
 when "Rice" then
 vPet.puts('m 0 1')
 sleep(2)
-vPet.puts('m 1 0')
-sleep(2)
 vPet.puts('m 2 2')
 when "Cake" then
 vPet.puts('m 0 1')
@@ -20,7 +18,7 @@ sleep(2)
 vPet.puts('m 1 2')
 sleep(2)
 vPet.puts('m 2 3')
-when "Tostada" then
+when "Tostadas" then
 vPet.puts('m 0 2')
 sleep(2)
 vPet.puts('m 1 2')

@@ -32,6 +32,26 @@ def messanger()
 	message
 end
 
+def death_check()
+	parser(messanger)
+	if $stats[0] < 0 and $stats[1] < 0
+	then
+		system 'zenity --info --text="Your virtual pet has died :( Created new pet and closing vpclient daemon." '
+		for i in 0..3 do
+		adjust(i, 0)
+		sleep(2)
+		end
+		adjust(0, 4)
+		sleep(2)
+		adjust(1, 4)
+		sleep(2)
+		adjust(3, 1)
+		system 'zenity --info --text="Your virtual pet has died :( Created new pet and closing vpclient daemon." '
+		exit
+	end
+
+end
+		
 def main
 
 	ageTimeout = 0
@@ -43,9 +63,9 @@ def main
 			adjust(3,1)
 		end
 		parser(messanger())
+		death_check()
 		ageTimeout = $stats[3] * 599 unless (ageTimeout = $stats[3] * 599) > 7200
 		
-		#puts("Step1")
 		if (ageTimeout = $stats[3] * 599) > 7200
 		then
 			ageTimeout = 7200
@@ -54,14 +74,15 @@ def main
 		sleep(ageTimeout)
 		year = ageTimeout + year
 		adjust(0,-1)
+		death_check()
 		parser(messanger())
 		if year > 43200
 		then
 			adjust(3,1)
 		end
-		#puts("Step2")
 		sleep(ageTimeout-(ageTimeout/2))
 		adjust(1,-1)
+		death_check()
 		parser(messanger)
 		year = year + ageTimeout
 		 
